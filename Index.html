@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Evaluación</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form class="form-container">
+    <h2>Formulario de Evaluación</h2>
+
+    <label for="fecha">📅 Fecha de la sesión</label>
+    <input type="date" id="fecha" name="fecha" required>
+
+    <label for="asesor">👤 Nombre del asesor</label>
+    <select id="asesor" name="asesor" required>
+      <option value="">-- Selecciona un asesor --</option>
+      <option value="Asesor 1">Asesor 1</option>
+      <option value="Asesor 2">Asesor 2</option>
+      <option value="Asesor 3">Asesor 3</option>
+    </select>
+
+    <label for="modulo">📘 Módulo</label>
+    <select id="modulo" name="modulo" required>
+      <option value="">-- Selecciona un módulo --</option>
+      <option value="Matemáticas I">Matemáticas I</option>
+      <option value="Comunicación I">Comunicación I</option>
+      <option value="Inglés I">Inglés I</option>
+    </select>
+
+    <label for="tema">📄 Tema abordado</label>
+    <input type="text" id="tema" name="tema" placeholder="Ejemplo: Ecuaciones de primer grado">
+
+    <div class="highlight-orange">
+      <label>⚠️ Áreas de mejora</label>
+    </div>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="mejora" value="Falta de participación"> Falta de participación</label>
+      <label><input type="checkbox" name="mejora" value="Poca interacción con alumnos"> Poca interacción con alumnos</label>
+      <label><input type="checkbox" name="mejora" value="No se usan recursos visuales"> No se usan recursos visuales</label>
+      <label><input type="checkbox" name="mejora" value="Exceso de lectura de pantalla"> Exceso de lectura de pantalla</label>
+      <label><input type="checkbox" name="mejora" value="Retroalimentación escasa"> Retroalimentación escasa</label>
+      <label><input type="checkbox" name="mejora" value="Problemas técnicos recurrentes"> Problemas técnicos recurrentes</label>
+      <label><input type="checkbox" name="mejora" value="Lenguaje poco inclusivo"> Lenguaje poco inclusivo</label>
+      <label><input type="checkbox" name="mejora" value="Sesión mal estructurada"> Sesión mal estructurada</label>
+      <label><input type="checkbox" name="mejora" value="Objetivos poco claros"> Objetivos poco claros</label>
+      <label><input type="checkbox" name="mejora" value="Falta de dinamismo"> Falta de dinamismo o motivación</label>
+      <label><input type="checkbox" name="mejora" value="Desorganización visual"> Presentación visual desorganizada</label>
+    </div>
+
+    <label for="comentario">📝 Comentario sobre áreas de mejora</label>
+    <textarea id="comentario" name="comentario" rows="3"></textarea>
+
+    <div class="highlight-green">
+      <label>✅ Recomendaciones o seguimiento</label>
+    </div>
+    <textarea id="recomendaciones" name="recomendaciones" rows="3"></textarea>
+
+    <button type="submit">Guardar evaluación</button>
+  </form>
+</body>
+</html>
